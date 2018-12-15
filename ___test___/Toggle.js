@@ -1,5 +1,5 @@
 import React from "react";
-import Toggle from "../src/Toggle";
+import { Toggle } from "../src/index";
 
 const Switch = ({ on, toggle }) => (
   <input

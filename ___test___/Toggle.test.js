@@ -11,6 +11,7 @@ describe("toggle", () => {
   const onToggleFunction = jest.fn();
 
   it("renders", () => {
+    console.log(Toggle);
     render(<Toggle />);
   });
 
