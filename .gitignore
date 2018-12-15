@@ -1,6 +1,7 @@
 node_modules
 temp
 dist
+lib
 *.log
 .DS_Store
 .vscode
