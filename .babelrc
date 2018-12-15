@@ -1,0 +1,5 @@
+{
+  "presets": ["@babel/env", "@babel/react"],
+  "plugins": ["@babel/plugin-proposal-class-properties"],
+  "ignore": ["node_modules", "test", "src/___16.7"]
+}
