@@ -1,12 +1,35 @@
 {
   "name": "@panukettu/components",
-  "version": "1.0.0",
-  "description": "a library of React components",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "a library of React componentsn",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx babel src --out-dir lib",
+    "test": "npx jest --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.2.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-testing-library": "^5.3.2",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupTests.js"
+  }
 }
