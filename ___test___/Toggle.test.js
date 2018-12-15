@@ -20,7 +20,7 @@ describe("toggle", () => {
     getByText(toggleOff);
   });
 
-  it("works without a onToggle function", () => {
+  it("works without an onToggle function", () => {
     const { getByTestId, getByText } = render(<Toggle />);
     const input = getByTestId(toggleInput);
     fireEvent.click(input);
