@@ -12,7 +12,7 @@
 
 _React <= 16.6_
 
-```
+```javascript
 import { Toggle } from '@panukettu/components'
 
  ...
