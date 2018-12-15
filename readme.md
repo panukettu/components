@@ -8,7 +8,7 @@
 
 # Components
 
-## Toggle
+## Toggle [Demo](https://codesandbox.io/s/r76o0ml3xm)
 
 _React <= 16.6_
 
@@ -34,5 +34,3 @@ const Switch = ({ toggle, on }) => (
   <input type="checkbox" onClick={toggle} defaultChecked={on} />
 );
 ```
-
-[Demo](https://codesandbox.io/s/r76o0ml3xm)
