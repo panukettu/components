@@ -25,7 +25,11 @@ class Toggle extends React.Component {
   toggle = () => {
     this.setState(
       ({ on }) => ({ on: !on }),
-      () => this.props.onToggle(this.state.on)
+      () => {
+        if (this.props.onToggle) {
+          this.props.onToggle(this.state.on);
+        }
+      }
     );
   };
 
