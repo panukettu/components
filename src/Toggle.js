@@ -1,12 +1,4 @@
-import React, {
-  useState,
-  useContext,
-  useEffect,
-  useRef,
-  useMemo,
-  useCallback
-} from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
 const ToggleContext = React.createContext();
 
