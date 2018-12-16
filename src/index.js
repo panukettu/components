@@ -1,3 +1,4 @@
+import Tabs from "./Tabs";
 import Toggle from "./Toggle";
 
-export { Toggle };
+export { Tabs, Toggle };
