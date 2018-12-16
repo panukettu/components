@@ -28,7 +28,7 @@ export default class Tabs extends React.Component {
               });
             }
           );
-          return children;
+          return <div className="tabs__list">{children}</div>;
         }}
       </TabConsumer>
     );
@@ -52,7 +52,7 @@ export default class Tabs extends React.Component {
   };
 
   static Panel = ({ children }) => {
-    return <div className="tabs__content">{children}</div>;
+    return <div className="tabs__panel">{children}</div>;
   };
 
   setActive = index => {
