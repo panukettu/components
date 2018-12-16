@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "react-testing-library";
 
-import Toggle from "./Toggle";
+import Toggle from "./ToggleUsage";
 
 describe("toggle", () => {
   const toggleInput = "toggle-input";
@@ -11,7 +11,6 @@ describe("toggle", () => {
   const onToggleFunction = jest.fn();
 
   it("renders", () => {
-    console.log(Toggle);
     render(<Toggle />);
   });
 
