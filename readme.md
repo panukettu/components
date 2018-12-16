@@ -60,7 +60,7 @@ import { Tabs } from '@panukettu/components'
     <Tabs.Tab>Price</Tabs.Tab>
     <Tabs.Tab>Food</Tabs.Tab>
     <Tabs.Tab>
-      <div className="tabs__panel--special">Other</div>
+      <div className="tabs__tab--special">Other</div>
     </Tabs.Tab>
   </Tabs.TabList>
   <Tabs.Panels>
