@@ -1,14 +1,10 @@
-import React, {
-  useState,
-  useMemo,
-  useCallback
-} from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import { useEffectAfterMount, useToggleContext } from "./Hooks";
 
 const ToggleContext = React.createContext();
 
 function Toggle(props) {
-  const [on, setOn] = useState(() => props.defaultValue || false));
+  const [on, setOn] = useState(() => props.defaultValue || false);
   const toggle = useCallback(() => setOn(on => !on), []);
 
   useEffectAfterMount(
