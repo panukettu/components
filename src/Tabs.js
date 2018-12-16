@@ -28,7 +28,7 @@ export default class Tabs extends React.Component {
               });
             }
           );
-          return <div className="tabs__list">{children}</div>;
+          return <div className="tabs__tablist">{children}</div>;
         }}
       </TabConsumer>
     );
@@ -37,7 +37,7 @@ export default class Tabs extends React.Component {
   static Tab = ({ isActive, childIndex, setActive, children }) => {
     return (
       <div
-        className={`tabs__heading${isActive ? "--active" : ""}`}
+        className={`tabs__tab ${isActive ? "tabs__tab--active" : ""}`}
         onClick={() => setActive(childIndex)}
       >
         {children}
@@ -64,7 +64,7 @@ export default class Tabs extends React.Component {
     const contextValue = { activeIndex, setActive: this.setActive };
     return (
       <TabContext.Provider value={contextValue}>
-        {this.props.children}
+        <div className="tabs">{this.props.children}</div>
       </TabContext.Provider>
     );
   }
