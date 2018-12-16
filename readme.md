@@ -10,7 +10,7 @@
 
 ## Toggle [Demo](https://codesandbox.io/s/r76o0ml3xm)
 
-_React <= 16.6_
+_React <= 16.7_
 
 ```javascript
 import { Toggle } from '@panukettu/components'
@@ -33,4 +33,40 @@ import { Toggle } from '@panukettu/components'
 const Switch = ({ toggle, on }) => (
   <input type="checkbox" onClick={toggle} defaultChecked={on} />
 );
+```
+
+## Tabs [Demo](https://codesandbox.io/s/jljww512jy)
+
+_React <= 16.7_
+
+```javascript
+import { Tabs } from '@panukettu/components'
+
+/*
+  CSS-classes:
+  .tabs           = wrapper
+  .tabs__tablist  = tabs wrapper
+  .tabs__tab      = a tab
+  .tabs__panel    = tab content
+*/
+
+ ...
+
+ <Tabs>
+  <Tabs.TabList>
+    <Tabs.Tab>Price</Tabs.Tab>
+    <Tabs.Tab>Food</Tabs.Tab>
+    <Tabs.Tab>
+      <div className="tabs__tab--special">Other</div>
+    </Tabs.Tab>
+  </Tabs.TabList>
+  <Tabs.Panels>
+    <Tabs.Panel>Cheap af</Tabs.Panel>
+    <Tabs.Panel>Try our burger</Tabs.Panel>
+    <Tabs.Panel>
+      <div className="tabs__panel--special">We have a gym</div>
+    </Tabs.Panel>
+  </Tabs.Panels>
+</Tabs>
+
 ```
