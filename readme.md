@@ -39,7 +39,7 @@ const Switch = ({ toggle, on }) => (
 
 _React <= 16.7_
 
-does not include any styles
+does not include any styles  
 css-selectors: 
 
 ```css
